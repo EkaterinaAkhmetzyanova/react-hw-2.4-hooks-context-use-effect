@@ -1,0 +1,52 @@
+.User {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 550px;
+}
+
+.UserList {
+  padding: 10px;
+  border: 1px solid #000;
+  text-align: center;
+  list-style-type: none;
+}
+
+.UserListItem {
+  padding: 8px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 8px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.UserListItem:hover {
+  border: 1px solid rgb(33, 36, 207);
+}
+
+.UserDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.UserAvatar {
+  width: 250px;
+  height: 250px;
+  padding: 5px;
+  border: 1px dashed #000;
+}
+
+.infoItem {
+  margin-bottom: 8px;
+}
+
+.UserName {
+  font-weight: 700;
+}
