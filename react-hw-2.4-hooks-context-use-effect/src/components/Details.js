@@ -15,6 +15,7 @@ export default function Details({info}) {
             setLoading(false);
         })
         .catch((e) => {
+           setLoading(false);
            throw new Error('Error');
         }) 
         }
@@ -24,7 +25,7 @@ export default function Details({info}) {
     return (
         <div className='Details'>
             {isLoading && <div className='LoadingWrapper'>Loading...</div>}
-            {user && (
+            {!isLoading && user && (
             <div className='UserDetails'>
             <div className='UserAvatar infoItem'><img scr={user.avatar} alt={user.name}></img></div>
             <div className='UserName infoItem'>{user.name}</div>
